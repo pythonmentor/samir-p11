@@ -1,6 +1,6 @@
 <script>
 $(".autocomplete").autocomplete({
     source: "{% url 'completions:complete' %}",
-    minLength: {{ autocomplete_min_length }}
+    minLength: 2
 });
 </script>
