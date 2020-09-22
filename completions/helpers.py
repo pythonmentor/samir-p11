@@ -25,7 +25,7 @@ def get_completions(term):
     }
     return list(model.objects.filter(**kwargs).order_by(*order).values_list(field, flat=True))
 
-def get_model(self, constant_name):
+def get_model(constant_name):
     """Returns the model specified with constant_name in the settings."""
     model_name = getattr(settings, constant_name)
     try:
